@@ -18,8 +18,8 @@ import threading
 pygame.init()
 
 # Screen dimensions
-SCREEN_WIDTH = 1200
-SCREEN_HEIGHT = 1000
+SCREEN_WIDTH = 1100
+SCREEN_HEIGHT = 730
 
 # Port Listening
 CONVEYOR_PORT = 12121
@@ -42,12 +42,12 @@ ARM_THICKNESS = 20
 ARM_WIDTH = 150
 BELT_WIDTH = 600
 COOKIE_WIDTH = 100
-COOKIE_QUALITY = 100 #between 10 and 100
+COOKIE_QUALITY = 30 #between 10 and 100
 ARM_POSITION = (SCREEN_WIDTH // 2) - ARM_WIDTH // 2
 DEV_OFF_Y = SCREEN_HEIGHT // 2 - BELT_WIDTH // 2 - 10
 CAM_MARGIN = COOKIE_WIDTH // 4
 CAM_POSITION = COOKIE_WIDTH * 3 + CAM_MARGIN + 10
-BELT_SPEED = 60 #between 30 and 300
+BELT_SPEED = 50 #between 30 and 300
 
 # Create the screen
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
